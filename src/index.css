@@ -1,13 +1,254 @@
-body {
+.netflix-main-page {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  width: 100vw;
+  height: 60%;
+  background-color: #141414;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.trailer {
+  position: absolute;
+  background-color: #141414;
+  height: 800px;
+}
+
+.trailer video {
+  background-color: #141414;
+  
+  width: 100vw;
+
+}
+
+.content {
+  position: relative;
+}
+
+.poster .content {
+  padding-left: 60px;
+}
+
+.poster .content img {
+  margin-top: 188px;
+  width: 600px;
+}
+
+.poster .content p {
+  padding-top: 10px;
+  width: 40%;
+  color: white;
+  font-size: 1.2vw;
+  font-weight: 400;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.content .buttons {
+  display: flex;
+  padding-top: 20px;
+
+}
+
+.content .btnplay {
+  width: 90px;
+  height: 35px;
+  background-color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.content .btnplay span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.content .btnplay i {
+  font-size: 38px;
+}
+
+.content .btninfo {
+  margin-left: 10px;
+  width: 120px;
+  height: 35px;
+  background-color: rgba(109, 109, 110, 0.7);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  opacity: 1;
+}
+
+.content .btninfo:hover {
+  background-color: grey;
+}
+
+.content .btninfo i {
+  font-size: 18px;
+}
+
+.content .btninfo span {
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+.hii{
+  margin-top: 250px;
+  position: relative;
+}
+
+.movie {
+  color: #e5e5e5;
+  position: relative;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  padding-left: 30px;
+  background-color: #141414;
+
+}
+
+
+
+.movie h3 {
+  padding-left: 20px;
+  padding-top: 20px;
+
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #141414;
+}
+
+.movies img {
+  width: 200px;
+  height: 250px;
+
+}
+
+.movies img:hover {
+  transform: scale(1.1);
+
+  transition: 0.2s;
+}
+
+.netflix-bottom-page .bottom-logos {
+  padding-top: 50px;
+  padding-left: 170px;
+  margin-top: 50px;
+}
+
+.netflix-bottom-page .bottom-logos i {
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.netflix-bottom-page .bottom-links {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  padding-left: 80px;
+  justify-content: space-around;
+  width: 1300px;
+
+
+}
+
+.netflix-bottom-page .bottom-links a {
+  font-size: 18px;
+  color: grey;
+  margin-left: 10px;
+  padding: 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.netflix-bottom-page .bottom-links a:hover {
+  text-decoration: underline;
+}
+
+.netflix-bottom-page .bottom-btn {
+  padding-left: 170px;
+  margin-top: 18px;
+}
+
+.netflix-bottom-page button {
+  border: solid 1px grey;
+  color: grey;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  padding: .5em;
+  font-size: 18px;
+  background-color: transparent;
+
+}
+
+.netflix-bottom-page button:hover {
+  color: white;
+}
+
+.netflix-bottom-page p {
+  margin-top: 20px;
+  color: grey;
+  padding-bottom: 30px;
+}
+
+
+
+@media(max-width:950px) {
+  .content {
+    visibility: hidden;
+  }
+  .hii{
+    margin-top: 10px;
+    position: relative;
+  }
+
+  .netflix-bottom-page .bottom-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding-left: 80px;
+    justify-content: space-around;
+    width: 900px;
+  }
+
+  .netflix-bottom-page .bottom-links a {
+    width: 300px;
+    display: flex;
+  }
+
+}
+
+@media(max-width:630px) {
+  .netflixlogo img {
+    display: none;
+  }
+
+  .content {
+   visibility: hidden;
+  }
+
+  .netflix-bottom-page .bottom-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding-left: 80px;
+    justify-content: space-around;
+    width: 100px;
+  }
+
+  .netflix-bottom-page .bottom-links a {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+  }
+
+ 
+
+
 }

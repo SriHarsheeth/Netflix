@@ -1,0 +1,77 @@
+.Navbar {
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 5px 5px 0 rgb(0, 2, 2), 0 6px 20px 0 rgb(0, 2, 0);
+    border-radius: 5px, 20px, 2px, 5px;
+    display: flex;
+
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    opacity: .9;
+}
+
+.Navbar a {
+    text-decoration: none;
+
+}
+
+.NavMenu {
+    margin-left: 60px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.NavMenu a {
+    margin-left: 20px;
+
+}
+
+.Menuh3 {
+
+
+    color: white;
+    text-decoration: none;
+}
+
+
+.Navicons {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 240px;
+    padding-top: 18px;
+    width: 200px;
+}
+
+@media(max-width:1060px) {
+
+    .Navbar .netflixlogo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Navicons {
+        display: none;
+    }
+}
+
+@media(max-width:810px) {
+    .Navicons {
+        display: none;
+    }
+
+    .NavMenu {
+        display: none;
+    }
+
+    .Navbar .netflixlogo {
+        display: flex;
+        margin: auto;
+        position: relative;
+        justify-content: center;
+    }
+}
