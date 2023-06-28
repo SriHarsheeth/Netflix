@@ -138,10 +138,10 @@ const Home = () => {
       <div className='netflix-bottom-page'>
         <div className='bottom-logos'>
 
-          <i className='bx bxl-facebook' style={{ color: 'white' }}  ></i>
-          <i className='bx bxl-instagram' style={{ color: 'white' }} ></i>
-          <i className='bx bxl-twitter' style={{ color: 'white' }} ></i>
-          <i className='bx bxl-youtube' style={{ color: 'white' }} ></i>
+          <i className='bx bxl-facebook'></i>
+          <i className='bx bxl-instagram'></i>
+          <i className='bx bxl-twitter'></i>
+          <i className='bx bxl-youtube'></i>
         </div>
         <div className='bottom-links'>
           <div>
