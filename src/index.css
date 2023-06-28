@@ -141,8 +141,14 @@
 }
 
 .netflix-bottom-page .bottom-logos i {
-  font-size: 30px;
+  font-size: 40px;
   margin-left: 20px;
+  color:white;
+}
+.netflix-bottom-page .bottom-logos i:hover{
+  color: black;
+  transform: scale(1.2);
+  transition: 1s;
 }
 
 .netflix-bottom-page .bottom-links {
@@ -170,6 +176,9 @@
 
 .netflix-bottom-page .bottom-links a:hover {
   text-decoration: underline;
+   color: white;
+  transform: scale(1.2);
+  transition: .1s;
 }
 
 .netflix-bottom-page .bottom-btn {
